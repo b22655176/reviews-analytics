@@ -25,3 +25,17 @@ for d in data:#1.把date清單100萬筆的留言，一個一個叫出來，每�
 print('一共有', len(d),'筆留言長度小於100') #5.就印出
 print(new[0]) #印出小於100的第一筆留言
 
+#把每一筆有good的留言塞選出來
+good = [] #設一個暫時的空清單為 good
+for d in data: #把date清單100萬筆的留言，一個一個叫出來，每筆留言都叫d
+	if "good" in d:#如果good有在每一筆留言
+		good.append(d)#就加入good清單
+print('一共有',len(good),'提到good')
+print(good[0])#印出有good的第一筆留言
+
+love = []
+for d in data:
+	if 'love' in d:
+		love.append(d)
+print(love[0])
+
